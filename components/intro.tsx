@@ -28,7 +28,7 @@ export default function Intro() {
                     duration:0.2,
                 }}
                 >
-                <Image src="https://lh3.googleusercontent.com/pw/AP1GczPDUiL-d2zYJYzkrdH7JTvlbJkxzAm_5HpbVqDXWdXwqrnvEdn2cWP5QbT8H8Cg7merho1SVN_all3SRAQw00FhoVAW0pGVHOPiUVkdTbnkwhNUOh7OOqQUxAn3X9CtVAoPBxgOeoNyy0TWMT2QwIND=w728-h970-s-no-gm?authuser=0"
+                <Image src="https://drive.google.com/uc?export=view&id=1VBquq9to9st9Mb7MeFrR2o1JUHcuEASU"
                  alt="Karthickkumar M" width="192" height="192" quality="95"  priority={true}
                  className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-x1"/>
                 </motion.div>

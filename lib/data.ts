@@ -85,23 +85,10 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "Java8", "JavaScript", "Spring Boot", "Python",
+"HTML", "CSS", "ReactJS", "MySQL", "Flask",
+"Hibernate", "JDBC", "C","Data Structures and Algorithms",
+"Agile Methodology", "OOPS",
+"Software Development Life Cycle",
+"System Design", "Data Science"
 ] as const;

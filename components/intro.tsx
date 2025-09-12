@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from "framer-motion";
 import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
@@ -10,11 +10,64 @@ import { useSectionInView } from '@/lib/hooks';
 import { useActiveSectionContext } from '@/context/active-section-context';
 
 
+const segments = [
+  { text: "Hello, I'm ", className: "" },
+  { text: "Karthick", className: "font-bold" },
+  { text: ". I'm a ", className: "" },
+  { text: "Software Developer", className: "font-bold" },
+  { text: " with ", className: "" },
+  { text: "2+ years", className: "font-bold" },
+  { text: " of experience. I enjoy building ", className: "" },
+  { text: "sites & apps", className: "italic" },
+  { text: ". My focus is ", className: "" },
+  { text: "React (Next.js)", className: "underline" },
+  { text: ".", className: "" },
+];
+
 export default function Intro() {
   const {ref} = useSectionInView('Home',0.5);
   const {setActiveSection,
     setTimeOfLastClick} = useActiveSectionContext();
   
+
+  const [typed, setTyped] = useState<string[]>([]);
+  const [isTyping, setIsTyping] = useState(true);
+
+  useEffect(() => {
+    let i = 0;
+    let j = 0;
+    let current = '';
+    const typeNext = () => {
+      if (i >= segments.length) {
+        setIsTyping(false); // Typing finished
+        return;
+      }
+      if (j < segments[i].text.length) {
+        current += segments[i].text[j];
+        setTyped(prev => [
+          ...prev.slice(0, i),
+          current,
+          ...Array(Math.max(segments.length - i - 1, 0)).fill(''),
+        ]);
+        j++;
+        setTimeout(typeNext, 20);
+      } else {
+        setTyped(prev => [
+          ...prev.slice(0, i),
+          current,
+          ...Array(Math.max(segments.length - i - 1, 0)).fill(''),
+        ]);
+        i++;
+        j = 0;
+        current = '';
+        setTimeout(typeNext, 100);
+      }
+    };
+    setTyped(Array(segments.length).fill(''));
+    setIsTyping(true); // Reset typing state on mount
+    typeNext();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <section ref={ref} 
@@ -51,11 +104,13 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Karthick.</span> I'm a{" "}
-        <span className="font-bold">Software Developer</span> with{" "}
-        <span className="font-bold">2 years</span> of experience. I enjoy building{" "} 
-        <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        {segments.map((seg, idx) => (
+          <span key={idx} className={seg.className}>
+            {typed[idx]}
+          </span>
+        ))}
+        {isTyping && <span className="animate-blink">|</span>}
+        
       </motion.h1>
 
       <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium "
@@ -111,3 +166,7 @@ export default function Intro() {
     </section>
   )
 }
+
+// Add this to your global CSS or Tailwind config for blinking cursor
+// .animate-blink { animation: blink 1s steps(2, start) infinite; }
+// @keyframes blink { to { visibility: hidden; } }

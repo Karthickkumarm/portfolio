@@ -19,7 +19,7 @@ const segments = [
   { text: "2+ years", className: "font-bold" },
   { text: " of experience. I enjoy building ", className: "" },
   { text: "sites & applications ", className: "italic" },
-  { text: "with a passion for building cool stuff that works like a charm.", className: "" },
+  { text: "with a passion for creating cool stuff that works like a charm.", className: "" },
 ];
 
 export default function Intro() {

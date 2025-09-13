@@ -19,7 +19,7 @@ export default function About() {
         <SectionHeading>About me</SectionHeading>
         <p className="mb-3">
         Hey there! I'm a{" "}
-        <span className="font-medium">Software Development Engineer II</span>at Mr. Cooper, and I'm all about building things that not only work flawlessly, but also feel great to use. My journey in tech began with a{" "}
+        <span className="font-medium">Software Development Engineer II</span> at Mr. Cooper, and I'm all about building things that not only work flawlessly, but also feel great to use. My journey in tech began with a{" "}
         <span className="font-medium">Bachelor of Technology</span>{" "} in 
         <span className="font-medium"> Information Technology</span>{" "} from
         <span className="font-medium"> Sri Sairam Institute of Technology</span>{" "}

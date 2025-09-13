@@ -18,10 +18,8 @@ const segments = [
   { text: " with ", className: "" },
   { text: "2+ years", className: "font-bold" },
   { text: " of experience. I enjoy building ", className: "" },
-  { text: "sites & apps", className: "italic" },
-  { text: ". My focus is ", className: "" },
-  { text: "React (Next.js)", className: "underline" },
-  { text: ".", className: "" },
+  { text: "sites & applications ", className: "italic" },
+  { text: "with a passion for building cool stuff that works like a charm.", className: "" },
 ];
 
 export default function Intro() {

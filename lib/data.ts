@@ -36,27 +36,27 @@ export const links = [
 export const experiencesData = [
   {
     title: "Internship",
-    location: "Miami, FL",
+    location: "IBM CIO India Private Limited, Bengaluru",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Delivered a 98.06% improvement in predictive algorithm accuracy for the IBM e-Pricing Tool through advanced data preprocessing and hyperparameter tuning. ",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Jan 2023 - Jul 2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Software Developer",
+    location: "IBM CIO India Private Limited, Bengaluru",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Specializing as a Full-Stack Developer for the General Ledger User Interface, with a focus on High-Level Design for the WD5 Support Dashboard and Consolidation Journals.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "Jul 2023 - Apr 2025",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Software Development Engineer II",
+    location: "Mr.Cooper Group, Chennai",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I'm now a full-stack developer at Mr.Cooper Group, working on modernizing the mortgage servicing platform using React and SpringBoot Core.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "May 2025 - Present",
   },
 ] as const;
 

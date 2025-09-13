@@ -18,31 +18,20 @@ export default function About() {
     >
         <SectionHeading>About me</SectionHeading>
         <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        Hey there! I'm a{" "}
+        <span className="font-medium">Software Development Engineer II</span>at Mr. Cooper, and I'm all about building things that not only work flawlessly, but also feel great to use. My journey in tech began with a{" "}
+        <span className="font-medium">Bachelor of Technology</span>{" "} in 
+        <span className="font-medium"> Information Technology</span>{" "} from
+        <span className="font-medium"> Sri Sairam Institute of Technology</span>{" "}
+        , and I've been on a mission ever since to turn complex problems into elegant solutions.
       </p>
+As an SDE II, I dive deep into the world of full-stack development. I'm passionate about crafting high-level user interfaces and building robust, scalable APIs. My previous work experience at
+<span className="font-medium"> IBM CIO India Private Limited</span>{" "} as a Software Developer helped me fine-tune my skills in everything from building RESTful APIs using Spring Boot3 to managing journal entries. 
+During my time there, I also detected and resolved vulnerabilities in applications using Mend and SonarQube, which reduced security risks by 40%.
+When I'm not writing code, I'm often brainstorming new project ideas or staying on top of the latest tech trends. Let's connect and build something awesome together!
+      <p className="mb-3">
 
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
-      </p>
+        </p>
     </motion.section>
   )
 }

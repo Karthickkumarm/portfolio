@@ -65,12 +65,16 @@ export const projectsData = [
     title: "A Novel Method for Handwritten Digit Recognition System",
     description: "Developed a versatile model for handwritten digit recognition, processing 100+ images daily. Achieved a 97% performance improvement by incorporating additional layers and ReLU activation.",
     tags: ["Pytorch", "Jupyter Notebook"],
+    githubUrl: "https://github.com/Karthickkumarm/Manhole-Detection-and-Monitoring-System", 
+    demoUrl: "", // Replace with actual demo URL
     imageUrl: handwrittenDigitRecognitionImg,
   },
   {
     title: "Manhole Detection and Monitoring System",
     description: "Built an IoT manhole monitoring system with sensor arrays and location-based SMS alerts to prevent accidents. Increased process effectiveness by 90% for faster alerts and overflow prevention.",
     tags: ["Internet of Things", "C"],
+    githubUrl: "https://github.com/Karthickkumarm/A-Novel-Method-for-Handwritten-Digit-Recognition-System", 
+    demoUrl: "https://www.youtube.com/watch?v=tyaq_09Rm84", 
     imageUrl: manholeDetectionImg,
   },
    {
@@ -78,6 +82,8 @@ export const projectsData = [
     description:
       "A comprehensive railway ticket reservation system built with Spring Boot and PostgreSQL, featuring user authentication, seat booking, and payment processing.",
     tags: ["Spring Boot", "PostgreSQL"],
+    githubUrl: "https://github.com/Karthickkumarm/Java-programming-questions/blob/main/src/RailwayTicketRS.java", 
+    demoUrl: "", // Replace with actual demo URL
     imageUrl: railwayReservationImg,
   },
 ] as const;

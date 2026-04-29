@@ -29,7 +29,7 @@ export default function Projects() {
                 onClick={() => setSelectedProject(null)}
             >
                 <div
-                    className="bg-white rounded-xl p-10 m-4 max-w-2xl w-full dark:bg-gray-900 relative shadow-2xl border border-gray-200 dark:border-gray-700"
+                    className="bg-[#FAF8FF] rounded-xl p-10 m-4 max-w-2xl w-full dark:bg-gray-900 relative shadow-2xl border border-gray-200 dark:border-gray-700"
                     onClick={(e) => e.stopPropagation()}
                 >
                     <button onClick={() => setSelectedProject(null)} className="absolute top-4 right-4 text-3xl font-bold text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 transition-colors">&times;</button>

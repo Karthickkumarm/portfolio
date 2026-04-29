@@ -9,8 +9,8 @@ import ThemeContextProvider from '@/context/theme-context';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: "Karthickkumar's Portfolio",
-  description: 'Karthick is a Software Developer',
+  title: "Karthick's Portfolio",
+  description: 'SDE II | 3+ years crafting AI-powered, cloud-ready systems. Agile mindset. Obsessed with clean architecture & real impact.',
 }
 
 export default function RootLayout({

@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import handwrittenDigitRecognitionImg from "@/public/handwritten-digit-recognition.png";
+import manholeDetectionImg from "@/public/manhole-detection.png";
+import railwayReservationImg from "@/public/railway-reservation.png";
 
 export const links = [
   {
@@ -52,9 +52,9 @@ export const experiencesData = [
   },
   {
     title: "Software Development Engineer II",
-    location: "Mr.Cooper Group, Chennai",
+    location: "Rocket India, Chennai",
     description:
-      "I'm now a full-stack developer at Mr.Cooper Group, working on modernizing the mortgage servicing platform using React and SpringBoot Core.",
+      "I'm now a full-stack developer at Rocket India, working on modernizing the mortgage servicing platform using React and SpringBoot Core.",
     icon: React.createElement(FaReact),
     date: "May 2025 - Present",
   },
@@ -62,32 +62,30 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    title: "A Novel Method for Handwritten Digit Recognition System",
+    description: "Developed a versatile model for handwritten digit recognition, processing 100+ images daily. Achieved a 97% performance improvement by incorporating additional layers and ReLU activation.",
+    tags: ["Pytorch", "Jupyter Notebook"],
+    imageUrl: handwrittenDigitRecognitionImg,
   },
   {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    title: "Manhole Detection and Monitoring System",
+    description: "Built an IoT manhole monitoring system with sensor arrays and location-based SMS alerts to prevent accidents. Increased process effectiveness by 90% for faster alerts and overflow prevention.",
+    tags: ["Internet of Things", "C"],
+    imageUrl: manholeDetectionImg,
   },
-  {
-    title: "Word Analytics",
+   {
+    title: "Railway Ticket Reservation System",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A comprehensive railway ticket reservation system built with Spring Boot and PostgreSQL, featuring user authentication, seat booking, and payment processing.",
+    tags: ["Spring Boot", "PostgreSQL"],
+    imageUrl: railwayReservationImg,
   },
 ] as const;
 
 export const skillsData = [
   "Java8", "JavaScript", "Spring Boot", "Python",
-"HTML", "CSS", "ReactJS", "MySQL", "Flask",
-"Hibernate", "JDBC", "C","Data Structures and Algorithms",
+"HTML", "CSS", "ReactJS", "MySQL", "MongoDB", "Redis", "Flask",
+"Hibernate", "JDBC", "C", "JUnit", "Data Structures and Algorithms",
 "Agile Methodology", "OOPS",
 "Software Development Life Cycle",
 "System Design", "Data Science"

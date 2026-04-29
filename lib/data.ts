@@ -85,8 +85,10 @@ export const projectsData = [
 export const skillsData = [
   "Java8", "JavaScript", "Spring Boot", "Python",
 "HTML", "CSS", "ReactJS", "MySQL", "MongoDB", "Redis", "Flask",
-"Hibernate", "JDBC", "C", "JUnit", "Data Structures and Algorithms",
-"Agile Methodology", "OOPS",
-"Software Development Life Cycle",
+"Hibernate", "JDBC", "C", "JUnit",
+"IntelliJ IDEA", "VSTS / Azure DevOps", "Postman", "Swagger (Open API)", "Git/GitHub", "SonarQube", "JIRA", "Spring Tool Suite (STS)", "VS Code",
+"Data Structures and Algorithms",
+"Agile Methodology", "OOP",
+"SDLC",
 "System Design", "Data Science"
 ] as const;

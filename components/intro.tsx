@@ -13,13 +13,13 @@ import { useActiveSectionContext } from '@/context/active-section-context';
 const segments = [
   { text: "Hello, I'm ", className: "" },
   { text: "Karthick", className: "font-bold" },
-  { text: ". I'm a ", className: "" },
+  { text: ". I'm a passionate ", className: "" },
   { text: "Software Developer", className: "font-bold" },
   { text: " with ", className: "" },
-  { text: "2+ years", className: "font-bold" },
-  { text: " of experience. I enjoy building ", className: "" },
-  { text: "sites & applications ", className: "italic" },
-  { text: "with a passion for creating cool stuff that works like a charm.", className: "" },
+  { text: "3+ years", className: "font-bold" },
+  { text: " of experience. I specialize in ", className: "" },
+  { text: "full-stack development", className: "italic" },
+  { text: ", building robust applications and high-level user interfaces.", className: "" },
 ];
 
 export default function Intro() {
@@ -69,7 +69,7 @@ export default function Intro() {
 
   return (
     <section ref={ref} 
-  id="home" className="mb-28 w-full text-center sm:mb-0 scroll-mt-[100rem]">
+  id="home" className="w-full text-center scroll-mt-[100rem]">
         <div className="flex items-center justify-center">
             <div className="relative ">
                 <motion.div initial={{scale:0,opacity:0}}
@@ -80,8 +80,8 @@ export default function Intro() {
                 }}
                 >
                 <Image src="https://drive.google.com/uc?export=view&id=1VBquq9to9st9Mb7MeFrR2o1JUHcuEASU"
-                 alt="Karthickkumar M" width="192" height="192" quality="95"  priority={true}
-                 className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-x1"/>
+                 alt="Karthickkumar M" width="192" height="192" quality="95" priority={true}
+                 className="h-48 w-48 rounded-full object-cover border-[0.35rem] border-white shadow-x1"/>
                 </motion.div>
                  <motion.span className="absolute bottom-0 right-0 text-4xl"
                  initial={{scale:0,opacity:0}}

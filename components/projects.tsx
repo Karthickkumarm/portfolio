@@ -10,15 +10,14 @@ export default function Projects() {
 
   return (
     <section ref={ref}
-    id="projects" className="scroll-mt-28 mb-28">
+    id="projects" className="scroll-mt-28">
         <SectionHeading>Projects</SectionHeading>
         <div className='w-full'>
             {
                 projectsData.map((project,index)=>(
                 <React.Fragment key={index}>
                 <Project {...project}/>
-                </React.Fragment>    
-
+                </React.Fragment>   
                 ))
             }
         </div>

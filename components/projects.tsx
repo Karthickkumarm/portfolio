@@ -29,17 +29,17 @@ export default function Projects() {
                 onClick={() => setSelectedProject(null)}
             >
                 <div
-                    className="bg-white rounded-lg p-8 m-4 max-w-2xl w-full dark:bg-gray-900 relative"
+                    className="bg-white rounded-xl p-10 m-4 max-w-2xl w-full dark:bg-gray-900 relative shadow-2xl border border-gray-200 dark:border-gray-700"
                     onClick={(e) => e.stopPropagation()}
                 >
-                    <button onClick={() => setSelectedProject(null)} className="absolute top-3 right-5 text-2xl font-bold text-gray-500 hover:text-gray-800 dark:hover:text-white">&times;</button>
-                    <h3 className="text-2xl font-semibold mb-4">{selectedProject.title}</h3>
-                    <div className="flex items-center gap-4 mt-4">
+                    <button onClick={() => setSelectedProject(null)} className="absolute top-4 right-4 text-3xl font-bold text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 transition-colors">&times;</button>
+                    <h3 className="text-3xl font-bold mb-6 text-gray-800 dark:text-white text-center">{selectedProject.title}</h3>
+                    <div className="flex items-center justify-center gap-4 mt-8">
                         {selectedProject.githubUrl && (
-                            <a href={selectedProject.githubUrl} target="_blank" rel="noopener noreferrer" className="group bg-white px-5 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 text-sm font-medium">View Source</a>
+                            <a href={selectedProject.githubUrl} target="_blank" rel="noopener noreferrer" className="group bg-white px-6 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-100 transition cursor-pointer border border-gray-300 dark:bg-white/10 text-base font-medium text-gray-700 dark:text-white/80 hover:text-gray-900 dark:hover:text-white">View Source</a>
                         )}
                         {selectedProject.demoUrl && (
-                            <a href={selectedProject.demoUrl} target="_blank" rel="noopener noreferrer" className="group bg-gray-900 text-white px-5 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition text-sm font-medium">Live Demo</a>
+                            <a href={selectedProject.demoUrl} target="_blank" rel="noopener noreferrer" className="group bg-gray-900 text-white px-6 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-800 active:scale-100 transition text-base font-medium">Live Demo</a>
                         )}
                     </div>
                 </div>

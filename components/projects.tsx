@@ -14,7 +14,7 @@ export default function Projects() {
   const {ref} = useSectionInView('Projects',0.5);
   const [selectedProject, setSelectedProject] = useState<(typeof projectsData)[number] | null>(null);
   const { scrollYProgress } = useScroll({
-    target: ref,
+    target: ref as unknown as React.RefObject<HTMLElement>,
     offset: ["start end", "end start"],
   });
 

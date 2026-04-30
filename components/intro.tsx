@@ -76,16 +76,19 @@ export default function Intro() {
                  alt="Karthickkumar M" width="192" height="192" quality="95" priority={true}
                  className="h-48 w-48 rounded-full object-cover border-[0.35rem] border-white shadow-x1"/>
                 </motion.div>
-                 <motion.span className="absolute bottom-0 right-0 text-4xl"
-                 initial={{scale:0,opacity:0}}
-                 animate={{opacity:1,scale:1}}
-                 transition={{
-                     type:"spring",
-                     delay:0.1,
-                     stiffness:125,
-                     duration:0.7,
-                 }}>
-                    👋
+                 <motion.span
+                   className="absolute bottom-0 right-0 text-4xl inline-block wave-emoji"
+                   initial={{ scale: 0, opacity: 0 }}
+                   animate={{ opacity: 1, scale: 1 }}
+                   transition={{
+                     type: 'spring',
+                     delay: 0.1,
+                     stiffness: 125,
+                     duration: 0.5,
+                   }}
+                   style={{ transformOrigin: '70% 70%' }}
+                 >
+                   👋
                  </motion.span>
             </div>
         </div>

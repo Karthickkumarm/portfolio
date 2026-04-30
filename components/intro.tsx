@@ -34,30 +34,23 @@ export default function Intro() {
   useEffect(() => {
     let i = 0;
     let j = 0;
-    let current = '';
     const typeNext = () => {
       if (i >= segments.length) {
         setIsTyping(false); // Typing finished
         return;
       }
-      if (j < segments[i].text.length) {
-        current += segments[i].text[j];
-        setTyped(prev => [
-          ...prev.slice(0, i),
-          current,
-          ...Array(Math.max(segments.length - i - 1, 0)).fill(''),
-        ]);
+      const currentSegmentText = segments[i].text;
+      if (j < currentSegmentText.length) {
+        setTyped(prev => {
+            const newTyped = [...prev];
+            newTyped[i] = currentSegmentText.substring(0, j + 1);
+            return newTyped;
+        });
         j++;
         setTimeout(typeNext, 20);
       } else {
-        setTyped(prev => [
-          ...prev.slice(0, i),
-          current,
-          ...Array(Math.max(segments.length - i - 1, 0)).fill(''),
-        ]);
         i++;
         j = 0;
-        current = '';
         setTimeout(typeNext, 100);
       }
     };
@@ -98,7 +91,7 @@ export default function Intro() {
         </div>
 
         <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl min-h-[11rem]"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >

@@ -74,7 +74,7 @@ export default function Intro() {
                 >
                 <Image src="https://drive.google.com/uc?export=view&id=1VBquq9to9st9Mb7MeFrR2o1JUHcuEASU"
                  alt="Karthickkumar M" width="192" height="192" quality="95" priority={true}
-                 className="h-48 w-48 rounded-full object-cover border-[0.35rem] border-white shadow-x1"/>
+                 className="h-48 w-48 rounded-full object-cover border-[0.35rem] border-white shadow-xl"/>
                 </motion.div>
                  <motion.span
                    className="absolute bottom-0 right-0 text-4xl inline-block wave-emoji"

@@ -12,13 +12,13 @@ import { useActiveSectionContext } from '@/context/active-section-context';
 
 const segments = [
   { text: "Hello, I'm ", className: "" },
-  { text: "Karthick", className: "font-bold" },
+  { text: "Karthick", className: "font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600 dark:from-violet-400 dark:to-indigo-400" },
   { text: ". I'm a passionate ", className: "" },
-  { text: "Software Developer", className: "font-bold" },
+  { text: "Software Developer", className: "font-bold text-violet-600 dark:text-violet-400" },
   { text: " with ", className: "" },
-  { text: "3+ years", className: "font-bold" },
+  { text: "3+ years", className: "font-bold text-violet-600 dark:text-violet-400" },
   { text: " of experience. I specialize in ", className: "" },
-  { text: "full-stack development", className: "italic" },
+  { text: "full-stack development", className: "italic font-semibold text-violet-600 dark:text-violet-400" },
   { text: ", building robust applications and high-level user interfaces.", className: "" },
 ];
 
